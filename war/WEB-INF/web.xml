@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE web-app
+    PUBLIC "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+    "http://java.sun.com/dtd/web-app_2_3.dtd">
+
+<web-app>
+
+	<!-- Servlets -->
+	<servlet>
+		<servlet-name>AdministrationService</servlet-name>
+		<servlet-class>prototyp.server.view.AdministrationImpl</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>AdministrationService</servlet-name>
+		<url-pattern>/prototyp/administration</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>LobbyService</servlet-name>
+		<servlet-class>prototyp.server.view.LobbyImpl</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>LobbyService</servlet-name>
+		<url-pattern>/prototyp/lobby</url-pattern>
+	</servlet-mapping>
+		
+	<servlet>
+		<servlet-name>PreGameService</servlet-name>
+		<servlet-class>prototyp.server.view.PreGameImpl</servlet-class>
+	</servlet> 
+	
+	<servlet-mapping>
+		<servlet-name>PreGameService</servlet-name>
+		<url-pattern>/prototyp/pregame</url-pattern>
+	</servlet-mapping> 
+	
+<!--	<servlet>
+		<servlet-name>PostGameService</servlet-name>
+		<servlet-class>prototyp.server.view.PostGameImpl</servlet-class>
+	</servlet> 
+	
+	<servlet-mapping>
+		<servlet-name>PostGameService</servlet-name>
+		<url-pattern>/prototyp/postgame</url-pattern>
+	</servlet-mapping> -->
+	
+	<servlet>
+		<servlet-name>FrontPageService</servlet-name>
+		<servlet-class>prototyp.server.view.FrontPageImpl</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>FrontPageService</servlet-name>
+		<url-pattern>/prototyp/frontpage</url-pattern>
+	</servlet-mapping>
+	
+<!--	<servlet>
+		<servlet-name>RoundService</servlet-name>
+		<servlet-class>prototyp.server.view.RoundImpl</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>RoundService</servlet-name>
+		<url-pattern>/prototyp/round</url-pattern>
+	</servlet-mapping>  -->
+
+   <servlet>
+ 	 <servlet-name>EventService</servlet-name>
+  	 <servlet-class>de.novanic.eventservice.service.EventServiceImpl</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+  		<servlet-name>EventService</servlet-name>
+  		<url-pattern>/prototyp/gwteventservice</url-pattern>
+	</servlet-mapping>
+
+  <servlet>
+    <servlet-name>ChatService</servlet-name>
+    <servlet-class>prototyp.server.util.ChatServiceImpl</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    	<servlet-name>ChatService</servlet-name>
+    	<url-pattern>/prototyp/chatservice</url-pattern>
+  	</servlet-mapping> 
+  	
+  	  <servlet>
+    <servlet-name>RoundManagerService</servlet-name>
+    <servlet-class>prototyp.server.model.RoundManager</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    	<servlet-name>RoundManagerService</servlet-name>
+    	<url-pattern>/prototyp/roundmanager</url-pattern>
+  	</servlet-mapping> 
+  	
+   	  <servlet>
+    <servlet-name>UserService</servlet-name>
+    <servlet-class>prototyp.server.util.UserServiceImpl</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    	<servlet-name>UserService</servlet-name>
+    	<url-pattern>/prototyp/userservice</url-pattern>
+  	</servlet-mapping>  
+  	
+  		<servlet>
+		<servlet-name>MapGeneratorService</servlet-name>
+		<servlet-class>prototyp.server.view.MapGeneratorImpl</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>MapGeneratorService</servlet-name>
+		<url-pattern>/prototyp/mapgenerator</url-pattern>
+	</servlet-mapping>	
+
+	<!-- GWT-Upload -->
+	 <context-param>
+ 	   <!-- max size of the upload request -->
+ 	   <param-name>maxSize</param-name>
+ 	   <param-value>3145728</param-value>
+ 	 </context-param>
+ 	 <context-param>
+  	  <!-- Useful in development mode to slow down the uploads in fast networks.
+         Put the number of milliseconds to sleep in each block received in the server.
+         false or 0, means don't use slow uploads  -->
+  	  <param-name>slowUploads</param-name>
+  	  <param-value>200</param-value>
+  	</context-param>
+
+ 	 <servlet>
+ 	   <servlet-name>uploadServlet</servlet-name>
+ 	   <servlet-class>prototyp.server.util.PhotoUploadServlet</servlet-class>
+ 	 </servlet>
+  	<servlet-mapping>
+  	  <servlet-name>uploadServlet</servlet-name>
+  	  <url-pattern>*.gupld</url-pattern>
+ 	</servlet-mapping>
+
+
+	<!-- Default page to serve -->	
+	 	
+  	<welcome-file-list>
+		<welcome-file>Prototyp.html</welcome-file>
+	</welcome-file-list>
+  
+</web-app>

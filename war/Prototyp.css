@@ -1,0 +1,217 @@
+@charset "UTF-8";
+
+@font-face {
+	font-family: "robo_font";
+	src: url("fonts/SFTransRoboticsExtended-Oblique.ttf");
+	format: ( "truetype");
+}
+
+html,body {
+	font-family: "robo_font", Helvetica, sans-serif;
+	font-size: 10pt;
+	padding: 0;
+	margin: 0;
+	background: #000000 url("images/ui/background_main.png") repeat;
+	color: #000000;
+}
+
+/* Einzelne Seiten */
+.frontpage {
+	background: #1d1d1d url("images/ui/background_view_frontpage4.png")
+		no-repeat;
+}
+
+.general {
+	background: #1d1d1d url("images/ui/background_view_general.png")
+		no-repeat;
+}
+
+.upld-form-elements {
+	max-width: 300px;
+	width: 280px;
+}
+
+.gwt-FileUpload {
+	max-width: 280px;
+	width: 250px;
+}
+
+/* Areas */
+.logInArea {
+	background: rgba(255, 255, 255, .4);
+	border-color: rgba(255, 255, 255, .5);
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	padding: 10px;
+}
+
+.lobbyArea,.highscoreArea,.profileArea,.adminArea,.mapGeneratorArea,.registerArea,.postGameArea,.replayArea
+	{
+	background: rgba(255, 255, 255, .4);
+	border-color: rgba(255, 255, 255, .5);
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	padding: 10px;
+	margin-left: 5px;
+	margin-bottom: 10px;
+}
+
+.agbArea {
+	background: rgba(255, 255, 255, .4);
+	border-color: rgba(255, 255, 255, .5);
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	margin-left: 5px;
+	margin-bottom: 10px;
+}
+
+.preGameArea,.refereeArea {
+	background: rgba(255, 255, 255, .4);
+	border-color: rgba(255, 255, 255, .5);
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	padding: 10px;
+	margin-left: 5px;
+}
+
+.chatArea {
+	vertical-align: bottom;
+	background: url("images/ui/chat_robo_trans.png") 90% bottom no-repeat;
+}
+
+.internalChatArea {
+	background: rgba(255, 255, 255, .4);
+	border-color: rgba(255, 255, 255, .5);
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	padding: 0px;
+	margin-left: 5px;
+}
+
+.innerArea {
+	background: rgba(255, 255, 255, .4);
+	border-color: rgba(255, 255, 255, .5);
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	padding: 10px;
+}
+
+.innerAreaSmall {
+	background: rgba(255, 255, 255, .4);
+	border-color: rgba(255, 255, 255, .5);
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+}
+
+.buttonArea {
+	margin-left: 15px;
+}
+
+.buttonAreaMoreMargin {
+	margin-left: 25px;
+}
+
+.buttonAreaMoreMargin2 {
+	margin-left: 25px;
+	margin-bottom: 10px;
+}
+
+.postGameButtonArea {
+	margin-left: 50px;
+	margin-top: 50px;
+}
+
+.pictureArea {
+	padding-right: 18px;
+}
+
+/* Elemente auf den Views */
+.headline {
+	font-size: 20pt;
+	font-family: robo_font;
+}
+
+.robotPowerDown {
+	color: #FFFFFF;
+}
+
+.programmingCard {
+	margin-left: 20px;
+}
+
+.programmingCardPriority {
+	font-size: 10px;
+	color: red;
+	position: absolute;
+	left: 15px;
+	top: -1px;
+	font-weight: bold;
+}
+
+.timer {
+	font-size: 13pt;
+	color: red;
+	font-weight: bold;
+}
+
+/* HTML Seite */
+h1 {
+	font-size: 25pt;
+	font-weight: bold;
+	margin: 40px 0px 30px;
+}
+
+.gamecontainer,#container {
+	width: 1000px;
+	height: 605px;
+	position: absolute;
+	top: 10px;
+	bottom: 5px;
+	left: 0px;
+	right: 0px;
+	margin: auto;
+	padding: 5px;
+}
+
+.gamecontainer {
+	background-image: url("images/ui/background-container2.png");
+	background-repeat: no-repeat;
+}
+
+.textItemField {
+	resize: none;	
+}
+
+
+div#info,div#info_error {
+	font-family: "robo_font", Helvetica, sans-serif;
+	height: 150px;
+	width: 250px;
+	position: absolute;
+	top: 200px;
+	left: 375px;
+	margin: auto;
+	background-image: url("images/ui/background-apha.png");
+	background-repeat: repeat;
+	border-top: 1px solid #f8f8ff;
+	border-left: 1px solid #f8f8ff;
+	padding: 5px;
+	text-align: center;
+	text-shadow: #c0c0c0 2px 2px 3px;
+}
+
+div#info_error {
+	width: 400px;
+	left: 250px;
+}
+
+div#info_error p {
+	color: #333;
+}

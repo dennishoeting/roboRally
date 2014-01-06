@@ -1,0 +1,126 @@
+10
+
+dir
+3038
+svn://hurrikan.informatik.uni-oldenburg.de:40025/Java/SGwtPrototyp2/src/prototyp/shared/exception
+svn://hurrikan.informatik.uni-oldenburg.de:40025
+
+
+
+2011-01-24T18:33:02.809338Z
+2633
+Andreas
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+6f1e75a3-1dba-675a-e66c-fd66446f6aee
+
+RoboException.java
+file
+
+
+
+
+2011-01-20T15:28:29.187000Z
+f23a3b4fce4459691d2f843d6deaeea2
+2011-01-18T09:23:40.602887Z
+2546
+Andreas
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+714
+
+RoundNotThereException.java
+file
+
+
+
+
+2011-01-31T18:03:45.375000Z
+4fe73fab35906313b18cf06b9fc49801
+2011-01-21T21:58:45.040229Z
+2589
+Andreas
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+615
+
+administration
+dir
+
+field
+dir
+
+frontpage
+dir
+
+lobby
+dir
+
+mail
+dir
+
+mapGenerator
+dir
+
+playingboard
+dir
+
+pregame
+dir
+
+registration
+dir
+
+round
+dir
+
